@@ -1,0 +1,14 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+temp/
+
+# ignore ALL hidden files
+.*
+
+#ignore gitignore itsself
+!/.gitignore
+
+# ignore terraform files
+terraform.*
