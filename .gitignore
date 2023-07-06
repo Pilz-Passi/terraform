@@ -8,7 +8,15 @@ temp/
 .*
 
 #ignore gitignore itsself
-!/.gitignore
+#!/.gitignore
 
 # ignore terraform files
 terraform.*
+
+# Local .terraform directories
+**/.terraform/*
+.terraform
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
