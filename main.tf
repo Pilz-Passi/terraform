@@ -1,7 +1,8 @@
 #test1
-provider "aws" {
-  region = "us-west-2"
+provider "aws"{
+    region = var.AWS_REGION
 }
+
 /*
 resource "aws_instance" "deham6demo"{
     ami = "ami-0fa167c2af1ea0840"
