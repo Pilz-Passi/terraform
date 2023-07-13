@@ -1,16 +1,16 @@
 output "vpc_id"{
-    value = aws_vpc.devVPC.ID    
+    value = aws_vpc.devVPC.id    
 }
 output "aws_internet_gateway"{
-    value = aws_internet_gateway.igw.id   
+    value = aws_internet_gateway.devVPC_IGW.id
 }
 output "public_subnet"{
-    value = aws_subnet.public_subnet.id  
+    value = aws_subnet.devVPC_public_subnet.id 
 }
 output "security_group"{
-    value = aws_security_group.sg_allow_ssh_http.id 
+    value = aws_security_group.devVPC_sg_allow_ssh_http.id
 }
-output "packer_ami"{
+/*output "packer_ami"{
     value= data.aws_ami.packeramisjenkins.id
 }
 output "aws_instance"{
@@ -22,4 +22,4 @@ output "public_ip"{
 }
 output "public_dns"{
     value = aws_instance.jenkins-instance.public_dns
-}
+}*/
