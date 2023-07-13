@@ -1,4 +1,4 @@
-resource "aws_security_group" "devVPC_sg_allow_ssh_http"{
+/*resource "aws_security_group" "devVPC_sg_allow_ssh_http"{
     vpc_id = aws_vpc.devVPC.id
     name = "devVPC_terraform_vpc_allow_ssh_http"
     tags = {
@@ -31,4 +31,4 @@ resource "aws_security_group_rule" "devVPC_http8080_ingress_access"{
     to_port= 8080
     type = "ingress"
     cidr_blocks = [var.cidr_blocks]
-}
+}*/
