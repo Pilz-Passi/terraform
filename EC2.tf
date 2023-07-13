@@ -7,4 +7,7 @@ resource "aws_instance" "deham6demo1"{
     tags = {
         Name = "deham6demo1"
     }
+    provisioner "local-exec"{
+    command = "echo Instance Type=${self.instance_type},Instance ID=${self.id},Public DNS=${self.public_dns},AMI ID=${self.ami} >> allinstancedetails"
+  }
 }
