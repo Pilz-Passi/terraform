@@ -3,7 +3,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
-/*resource "aws_instance" "deham6demo"{
+resource "aws_instance" "deham6demo"{
     ami = "ami-0fa167c2af1ea0840"
     instance_type = "t3.micro"
     key_name = "vockey"
@@ -12,4 +12,4 @@ provider "aws" {
     tags = {
         Name = "deham6demo"
     }
-}*/
+}
