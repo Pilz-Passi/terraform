@@ -32,3 +32,12 @@ resource "aws_security_group_rule" "devVPC_http8080_ingress_access"{
     type = "ingress"
     cidr_blocks = [var.cidr_blocks]
 }
+# Ingress Security Port 3306 (Inbound)
+resource "aws_security_group_rule" "devVPC_sql_ingress_access"{
+    from_port = 3306
+    protocol = "tcp"
+    security_group_id = aws_security_group.devVPC_sg_allow_ssh_http.id
+    to_port= 3306
+    type = "ingress"
+    cidr_blocks = [var.cidr_blocks]
+}
